@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Blazor.Hosting;
+using System;
 
 namespace DotnetPwaSample
 {
@@ -6,7 +7,18 @@ namespace DotnetPwaSample
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            try
+            {
+                CreateHostBuilder(args).Build().Run();
+            }
+            catch(Exception ex)
+            {
+
+            }
+            finally
+            {
+
+            }
         }
 
         public static IWebAssemblyHostBuilder CreateHostBuilder(string[] args) =>

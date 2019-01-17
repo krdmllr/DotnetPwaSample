@@ -25,7 +25,6 @@ var filesToCache = [
     './_framework/_bin/Microsoft.Extensions.DependencyInjection.dll',
     './_framework/_bin/Microsoft.JSInterop.dll',
     './_framework/_bin/mscorlib.dll',
-    './_framework/_bin/netstandard.dll',
     './_framework/_bin/System.Net.Http.dll',
     './_framework/_bin/Mono.WebAssembly.Interop.dll',
     './_framework/_bin/System.dll',
