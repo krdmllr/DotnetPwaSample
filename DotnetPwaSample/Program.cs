@@ -1,28 +1,16 @@
 ﻿using Microsoft.AspNetCore.Blazor.Hosting;
-using System;
+using System.Threading.Tasks;
 
 namespace DotnetPwaSample
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            try
-            {
-                CreateHostBuilder(args).Build().Run();
-            }
-            catch(Exception ex)
-            {
+            var builder = WebAssemblyHostBuilder.CreateDefault(args);
+            builder.RootComponents.Add<App>("app");
 
-            }
-            finally
-            {
-
-            }
+            await builder.Build().RunAsync();
         }
-
-        public static IWebAssemblyHostBuilder CreateHostBuilder(string[] args) =>
-            BlazorWebAssemblyHost.CreateDefaultBuilder()
-                .UseBlazorStartup<Startup>();
     }
 }

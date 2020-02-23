@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/DotnetPwaSample/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#3a0647",
   "theme_color": "#052767"
